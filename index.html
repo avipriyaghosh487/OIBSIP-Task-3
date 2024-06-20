@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form id="tempConverter">
+            <div class="input-section">
+                <label for="tempInput">Enter Temperature:</label>
+                <input type="text" id="tempInput" placeholder="Enter a number">
+            </div>
+            <div class="radio-section">
+                <div>
+                    <p>From:</p>
+                    <label>
+                        <input type="radio" name="fromUnit" value="C" checked>
+                        <span class="checkmark"></span> Celsius
+                    </label>
+                    <label>
+                        <input type="radio" name="fromUnit" value="F">
+                        <span class="checkmark"></span> Fahrenheit
+                    </label>
+                    <label>
+                        <input type="radio" name="fromUnit" value="K">
+                        <span class="checkmark"></span> Kelvin
+                    </label>
+                </div>
+                <div>
+                    <p>To:</p>
+                    <label>
+                        <input type="radio" name="toUnit" value="C" checked>
+                        <span class="checkmark"></span> Celsius
+                    </label>
+                    <label>
+                        <input type="radio" name="toUnit" value="F">
+                        <span class="checkmark"></span> Fahrenheit
+                    </label>
+                    <label>
+                        <input type="radio" name="toUnit" value="K">
+                        <span class="checkmark"></span> Kelvin
+                    </label>
+                </div>
+            </div>
+            <button type="button" id="convertBtn">Convert</button>
+        </form>
+        <div class="output-section">
+            <h2>Converted Temperature:</h2>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
